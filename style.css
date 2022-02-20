@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Rubik,sans-serif !important;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.header-background{
+  background: url('./img/hero-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  /* height: 50vh; */
+  font-size: 2 rem;
+  color: white;
+}
+
+.app-back{
+  background-image: url("https://playerx.qodeinteractive.com/wp-content/uploads/2018/06/h2-background-img-1.jpg");
+}
+
+.user-review{
+  background-color: rgb(27, 19, 19);
+  color: white;
+}
+
+.newsletter{
+  background: black;
+  color: white;
+  border: none;
+}
+
+.newsletter:hover{
+  border-bottom: 2px solid red;
+}
+
+.foot-background{
+  background: url('./img/h2-background-img-3.jpg');
+  background-repeat: repeat;
+  background-size: 100%;
+  /* width: 100%; */
+  height: 700px;
+}
+
+.app-store, .app-store a{
+  background-color: rgb(5, 5, 5);
+  color: white;
+  text-decoration: none;
+}
+
+.app-store a:hover{
+  color: white;
+}
+
+.head{
+  margin-top: 10%;
+}
+
+.foot-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* margin-right: -15px; */
+  margin-left: -15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  border-bottom: 5px solid red;
+  color: white;
+}
+
+button{
+  background-color: red;
+  border: none;
+  padding: 2%;
+  color: white;
+  padding: 14px 40px;
+}
+
+/* mobile */
+@media screen and (max-width: 800px) {
+  .desktop-head{
+    display: none;
+  }
+  .css-row{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* desktop view */
+@media screen and (max-width: 2500px) and (min-width: 800px){
+  .mobile-head{
+    display: none;
+  }
+  .css-row{
+    display: flex;
+    flex-direction: row;
+  }
+}
